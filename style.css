@@ -69,6 +69,7 @@ img {
 .tab-menu ul {
 	display: -webkit-flex;
 	display: flex;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	list-style-type: none;
 	margin: 0;
@@ -76,6 +77,7 @@ img {
 }
 
 .tab-menu ul li {
+	-webkit-flex: 1;
 	flex: 1;
 	text-align: center;
 }
@@ -112,6 +114,7 @@ img {
 .search-user .search-user-tab {
 	display: -webkit-flex;
 	display: flex;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	list-style-type: none;
 	margin: 0;
@@ -119,6 +122,7 @@ img {
 }
 
 .search-user .search-user-tab li {
+	-webkit-flex: 1;
 	flex: 1;
 	text-align: center;
 }
@@ -140,7 +144,9 @@ img {
 .search-user .search-user-category ul {
 	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	list-style-type: none;
 	margin: 0 0 10px;
@@ -239,6 +245,7 @@ img {
 .user-main-visual .user-main-visual-pager {
 	display: -webkit-flex;
 	display: flex;
+	-webkit-justify-content: center;
 	justify-content: center;
 	list-style-type: none;
 	margin: 0;
@@ -255,6 +262,7 @@ img {
 }
 
 .user-header {
+	-webkit-align-items: center;
 	align-items: center;
 	display: -webkit-flex;
 	display: flex;
