@@ -356,3 +356,19 @@ img {
 	font-size: 14px;
 	padding: 2px 8px;
 }
+
+.ad-in-list {
+	background: #ddd;
+	color: #fff;
+	padding-top: 56.25%;
+	position: relative;
+	width: 100%;
+}
+
+.ad-in-list span {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
