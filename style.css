@@ -31,10 +31,34 @@ img {
 }
 
 .login-panel {
-	background: url(bg.jpg) no-repeat center center / cover;
+	background: transparent;
 	height: 100vh;
 	padding: 10px;
 	position: relative;
+}
+
+.login-panel .bg {
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	width: 100%;
+	z-index: -1;
+}
+
+.login-panel .bg.active {
+	opacity: 1;
+}
+
+.login-panel .bg-1 {
+	background: url(bg.jpg) no-repeat center center / cover;
+}
+
+.login-panel .bg-2 {
+	background: url(bg_2.jpg) no-repeat center center / cover;
 }
 
 .login-panel h1 {
