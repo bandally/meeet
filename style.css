@@ -344,11 +344,15 @@ img {
 }
 
 .user-header {
-	-webkit-align-items: center;
-	align-items: center;
-	display: -webkit-flex;
-	display: flex;
 	margin-bottom: 10px;
+}
+
+.user-header .user-image {
+	float: left;
+}
+
+.user-header .user-data {
+	overflow: hidden;
 }
 
 .data-list {
