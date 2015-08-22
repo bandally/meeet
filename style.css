@@ -1,0 +1,301 @@
+@charset 'UTF-8';
+
+body {
+	color: #555;
+	padding-top: 50px;
+	padding-bottom: 59px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+.btn.btn-primary {
+	background: #FDC44F;
+	border: 0;
+}
+
+.header {
+	background: #FDC44F;
+	color: #fff;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.header h1 {
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 50px;
+	margin: 0;
+	text-align: center;
+}
+
+.header a {
+	color: #fff;
+}
+
+.header .header-left {
+	left: 10px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.tab-menu {
+	background: #fff;
+	border-top: 1px solid;
+	color: #999;
+	bottom: 0;
+	left: 0;
+	padding: 5px 0;
+	position: fixed;
+	width: 100%;
+}
+
+.tab-menu ul {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tab-menu ul li {
+	flex: 1;
+	text-align: center;
+}
+
+.tab-menu ul li a {
+	color: #ccc;
+}
+
+.tab-menu ul li a i {
+	display: block;
+}
+
+.tab-menu ul .active a {
+	color: #FDC44F;
+}
+
+.content {
+	padding: 0 10px;
+}
+
+.section-title {
+	background: #ddd;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 0 -10px;
+	padding: 0 10px;
+}
+
+.search-user {
+	margin: 0 -10px;
+}
+
+.search-user .search-user-tab {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.search-user .search-user-tab li {
+	flex: 1;
+	text-align: center;
+}
+
+.search-user .search-user-tab li a {
+	color: #555;
+	display: block;
+	padding: 15px 0;
+}
+
+.search-user .search-user-tab .active {
+	border-bottom: 2px solid #FDC44F;
+}
+
+.search-user .search-user-content {
+	padding: 10px;
+}
+
+.search-user .search-user-category ul {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.search-user .search-user-category ul li {
+	width: 50%;
+}
+
+.search-user .search-user-category ul li .category-item {
+	display: block;
+	font-size: 14px;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+}
+
+.user-image {
+	background: #eee;
+	border-radius: 50%;
+	display: block;
+	height: 80px;
+	line-height: 80px;
+	margin-right: 10px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 80px;
+}
+
+.user-name {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.user-categories {
+	display: block;
+	margin: 5px 0;
+}
+
+.user-place {
+	color: #ccc;
+	display: block;
+}
+
+.user-message {
+	color: #555;
+	display: block;
+	font-size: 12px;
+}
+
+.user-list {
+	margin: 0 -10px;
+}
+
+.user-list .user {
+	border-bottom: 1px solid #ddd;
+}
+
+.user-list .user a {
+	color: #555;
+	display: -webkit-flex;
+	display: flex;
+	padding: 10px;
+	position: relative;
+}
+
+.user-list .user a:after {
+	color: #ddd;
+	content: '\f054';
+	font-family: fontAwesome;
+	font-size: 1.5em;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.user-list .user .user-image i {
+	line-height: 80px;
+}
+
+.user-main-visual {
+	margin: 0 -10px;
+}
+
+.user-main-visual .user-main-visual-slider {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-main-visual .user-main-visual-pager {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-main-visual .user-main-visual-pager li {
+	color: #ddd;
+	margin: 5px;
+}
+
+.user-main-visual .user-main-visual-pager .active {
+	color: #FDC44F;
+}
+
+.user-header {
+	align-items: center;
+	display: -webkit-flex;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.data-list {
+	margin: 0 -10px;
+	width: calc(100% + 20px);
+}
+
+.data-list tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.data-list tr th {
+	padding: 10px;
+}
+
+.data-list tr td {
+	padding: 10px;
+}
+
+.user-recommend-item {
+	padding: 10px 0;
+}
+
+.user-recommend-item .user-image {
+	float: left;
+}
+
+.user-recommend-item .user-data {
+	display: block;
+	overflow: hidden;
+}
+
+.category-item {
+	background: #ddd;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	padding: 2px 8px;
+}
