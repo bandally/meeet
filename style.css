@@ -24,7 +24,8 @@ img {
 	max-width: 100%;
 }
 
-.btn.btn-primary {
+.btn.btn-primary,
+.btn.btn-primary:active {
 	background: #FDC44F;
 	border: 0;
 }
