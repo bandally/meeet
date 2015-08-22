@@ -2,8 +2,9 @@
 
 body {
 	color: #555;
+	font-size: 14px;
 	padding-top: 50px;
-	padding-bottom: 59px;
+	padding-bottom: 55px;
 }
 
 a {
@@ -84,6 +85,7 @@ img {
 
 .tab-menu ul li a {
 	color: #ccc;
+	font-size: 12px;
 }
 
 .tab-menu ul li a i {
@@ -101,7 +103,7 @@ img {
 .section-title {
 	background: #ddd;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5;
 	margin: 0 -10px;
 	padding: 0 10px;
@@ -180,7 +182,7 @@ img {
 
 .user-name {
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
