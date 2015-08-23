@@ -5,6 +5,10 @@ body {
 	padding-bottom: 55px;
 }
 
+.login {
+	padding: 0;
+}
+
 .header {
 	left: 0;
 	position: fixed;
