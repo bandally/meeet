@@ -2,15 +2,12 @@
 
 html {
 	background: #ddd;
-	height: 100%;
-	padding: 50px 0 55px;
 }
 
 body {
+	background: transparent;
 	color: #555;
 	font-size: 14px;
-	height: 100%;
-	overflow: hidden;
 }
 
 .login {
@@ -39,7 +36,6 @@ img {
 .login-panel {
 	background: transparent;
 	height: 100vh;
-	margin-top: -50px;
 	padding: 10px;
 	position: relative;
 }
@@ -115,8 +111,6 @@ img {
 .header {
 	background: #FDC44F;
 	color: #fff;
-	margin-top: -50px;
-	position: relative;
 }
 
 .header h1 {
@@ -144,7 +138,6 @@ img {
 	background: #fff;
 	border-top: 1px solid #ddd;
 	color: #999;
-	margin-bottom: -55px;
 	padding: 5px 0;
 }
 
