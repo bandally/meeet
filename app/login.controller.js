@@ -22,7 +22,7 @@
 			$interval(changeBackgroundClass, 3000);
 
 			function changeBackgroundClass() {
-				angular.forEach(angular.element('.bg'), function(bg) {
+				angular.forEach(angular.element(document.querySelector('.bg')), function(bg) {
 					var bg = angular.element(bg);
 					if (bg.hasClass(activeClass)) {
 						bg.removeClass(activeClass);
