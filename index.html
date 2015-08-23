@@ -14,7 +14,9 @@
 </head>
 <body ng-controller="AppController as app" ng-class="{ login: app.stateName() === 'login' }">
 	<header class="header" ng-if="app.stateName() !== 'login'">
-		<p class="header-left"><a ui-sref="home"><i class="fa fa-arrow-left fa-2x"></i></a></p>
+		<p class="header-left" ng-if="app.stateName() !== 'home'">
+			<a ui-sref="home"><i class="fa fa-arrow-left fa-2x"></i></a>
+		</p>
 		<h1><a ui-sref="home">meeet</a></h1>
 	</header>
 	<div ui-view></div>
