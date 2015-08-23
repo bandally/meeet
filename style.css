@@ -1,9 +1,15 @@
 @charset 'UTF-8';
 
-body {
+html {
 	background: #ddd;
+	height: 100%;
+	padding: 50px 0 55px;
+}
+
+body {
 	color: #555;
 	font-size: 14px;
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -33,6 +39,7 @@ img {
 .login-panel {
 	background: transparent;
 	height: 100vh;
+	margin-top: -50px;
 	padding: 10px;
 	position: relative;
 }
@@ -108,6 +115,7 @@ img {
 .header {
 	background: #FDC44F;
 	color: #fff;
+	margin-top: -50px;
 	position: relative;
 }
 
@@ -136,6 +144,7 @@ img {
 	background: #fff;
 	border-top: 1px solid #ddd;
 	color: #999;
+	margin-bottom: -55px;
 	padding: 5px 0;
 }
 
@@ -170,7 +179,7 @@ img {
 
 .content {
 	background: #fff;
-	height: calc(100vh - 50px - 55px);
+	height: 100%;
 	overflow: scroll;
 	padding: 0 10px;
 	-webkit-overflow-scrolling: touch;
