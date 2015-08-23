@@ -1,10 +1,10 @@
 @charset 'UTF-8';
 
 body {
+	background: #ddd;
 	color: #555;
 	font-size: 14px;
-	padding-top: 50px;
-	padding-bottom: 55px;
+	overflow: hidden;
 }
 
 .login {
@@ -108,11 +108,7 @@ img {
 .header {
 	background: #FDC44F;
 	color: #fff;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
+	position: relative;
 }
 
 .header h1 {
@@ -138,13 +134,9 @@ img {
 
 .tab-menu {
 	background: #fff;
-	border-top: 1px solid;
+	border-top: 1px solid #ddd;
 	color: #999;
-	bottom: 0;
-	left: 0;
 	padding: 5px 0;
-	position: fixed;
-	width: 100%;
 }
 
 .tab-menu ul {
@@ -177,7 +169,11 @@ img {
 }
 
 .content {
+	background: #fff;
+	height: calc(100vh - 50px - 55px);
+	overflow: scroll;
 	padding: 0 10px;
+	-webkit-overflow-scrolling: touch;
 }
 
 .section-title {
