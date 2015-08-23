@@ -1,22 +1,18 @@
 (function() {
 	'use strict';
 
-	angular.module('app').run(run);
+	angular.module('app').controller('LoginController', LoginController);
 
-	run.$injector = [
-		'$interval',
-		'$state'
+	LoginController.$injector = [
+		'$interval'
 	];
 
-	function run($interval, $state) {
+	function LoginController($interval) {
 
 		activate();
 
 		function activate() {
-			// if ($state.current.name === 'login') {
-			if (true) {
-				backgroundChanger();
-			}
+			backgroundChanger();
 		}
 
 		function backgroundChanger() {
