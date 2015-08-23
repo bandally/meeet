@@ -17,7 +17,7 @@
 			})
 			.state('home', {
 				url: '/home',
-				templateUrl: 'app/top.html'
+				templateUrl: 'app/home.html'
 			})
 			.state('user', {
 				url: '/user/:userId',
