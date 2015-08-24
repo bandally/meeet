@@ -1,0 +1,23 @@
+{
+  "name": "meeet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosket/meeet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosket/meeet/issues"
+  },
+  "homepage": "https://github.com/yosket/meeet#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-copy": "0.0.2"
+  }
+}
