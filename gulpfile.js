@@ -2,10 +2,13 @@ var gulp = require('gulp');
 
 gulp.task('copy', function() {
 	return gulp.src([
-		'src/**/*.html',
-		'src/**/*.css',
-		'src/**/*.js'
+		'src/client/**/*.html',
+		'src/client/**/*.gif',
+		'src/client/**/*.jpg',
+		'src/client/**/*.png',
+		'src/client/**/*.css',
+		'src/client/**/*.js'
 	], {
-		base: 'src'
-	}).pipe(gulp.dest('dest'));
+		base: 'src/client'
+	}).pipe(gulp.dest('dest/client'));
 });
