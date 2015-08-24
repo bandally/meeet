@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>meeet</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+	<link rel="stylesheet" href="app/css/style.css">
+	<link rel="stylesheet" href="app/css/layout-for-web.css">
+</head>
+<body ng-controller="AppController as app" ng-class="app.stateName()">
+	<header class="header" ng-if="app.stateName() !== 'login'">
+		<p class="header-left" ng-if="app.stateName() !== 'home'">
+			<a ui-sref="home"><i class="fa fa-arrow-left fa-2x"></i></a>
+		</p>
+		<h1><a ui-sref="home">meeet</a></h1>
+	</header>
+	<div ui-view></div>
+	<nav class="tab-menu" ng-if="app.stateName() !== 'login'">
+		<ul>
+			<li><a ui-sref="home"><i class="fa fa-home fa-2x"></i>ホーム</a></li>
+			<li><a ui-sref="friends"><i class="fa fa-users fa-2x"></i>友達</a></li>
+			<li><a ui-sref="#"><i class="fa fa-envelope-o fa-2x"></i>メッセージ</a></li>
+			<li><a ui-sref="#"><i class="fa fa-user fa-2x"></i>アカウント</a></li>
+		</ul>
+	</nav>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="app/app.module.js"></script>
+	<script src="app/app.route.js"></script>
+	<script src="app/app.run.js"></script>
+	<script src="app/app.controller.js"></script>
+	<script src="app/login.controller.js"></script>
+</body>
+</html>

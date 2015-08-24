@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+body {
+	padding-top: 50px;
+	padding-bottom: 55px;
+}
+
+.login {
+	padding: 0;
+}
+
+.header {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.tab-menu {
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+}
