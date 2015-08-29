@@ -1,0 +1,14 @@
+<ul>
+	<li ng-class="{ active: tabMenu.isActive('home') }">
+		<a ui-sref="home"><i class="fa fa-home fa-2x"></i>ホーム</a>
+	</li>
+	<li ng-class="{ active: tabMenu.isActive('friends') }">
+		<a ui-sref="friends"><i class="fa fa-users fa-2x"></i>友達</a>
+	</li>
+	<li ng-class="{ active: tabMenu.isActive('messages') }">
+		<a ui-sref="#"><i class="fa fa-envelope-o fa-2x"></i>メッセージ</a>
+	</li>
+	<li ng-class="{ active: tabMenu.isActive('account') }">
+		<a ui-sref="#"><i class="fa fa-user fa-2x"></i>アカウント</a>
+	</li>
+</ul>
