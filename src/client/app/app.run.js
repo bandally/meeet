@@ -3,7 +3,9 @@
 
 	angular.module('app').run(run);
 
-	run.$injector = [];
+	run.$injector = ['$anchorScroll', '$rootScope'];
 
-	function run() {}
+	function run($anchorScroll, $rootScope) {
+		$rootScope.$on('$stateChangeSuccess', $anchorScroll);
+	}
 })();
