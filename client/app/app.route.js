@@ -29,9 +29,21 @@
 				url: '/search',
 				templateUrl: 'app/search.html'
 			})
+			.state('search.result', {
+				url: '/result',
+				views: {
+					"@": {
+						templateUrl: 'app/search-result.html'
+					}
+				}
+			})
 			.state('friends', {
 				url: '/friends',
 				templateUrl: 'app/friends.html'
+			})
+			.state('spots', {
+				url: '/spots',
+				templateUrl: 'app/spots.html'
 			});
 	}
 })();
