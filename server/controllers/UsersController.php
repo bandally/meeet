@@ -7,7 +7,14 @@ class UsersController extends Controller
 {
     public function index()
     {
-        $users = Users::find();
+        $limit  = $this->request->getQuery('limit', 'int', 10);
+        $offset = $this->request->getQuery('offset', 'int', 0);
+
+        $users = Users::find([
+            'limit'  => $limit,
+            'offset' => $offset,
+        ]);
+
         $data = [];
         foreach ($users as $user) {
             $data[] = $this->_getDataArray($user);
@@ -21,13 +28,29 @@ class UsersController extends Controller
 
     public function view($id)
     {
-        $user = Users::find($id);
+        $user = Users::findFirstById($id);
+
         $data = $this->_getDataArray($user);
 
         $response = new Response();
         $response->setJsonContent($data);
 
         return $response;
+    }
+
+    public function add()
+    {
+
+    }
+
+    public function edit($id)
+    {
+
+    }
+
+    public function delete($id)
+    {
+
     }
 
     protected function _getDataArray($dataObject)

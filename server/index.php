@@ -44,6 +44,9 @@ $users->setHandler('UsersController', true);
 $users->setPrefix('/users');
 $users->get('/', 'index');
 $users->get('/{id}', 'view');
+$users->post('/', 'add');
+$users->put('/{id}', 'edit');
+$users->delete('/{id}', 'delete');
 $app->mount($users);
 
 // 404エラー
