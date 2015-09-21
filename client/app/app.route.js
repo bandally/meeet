@@ -44,6 +44,10 @@
 			.state('spots', {
 				url: '/spots',
 				templateUrl: 'app/spots.html'
+			})
+			.state('account', {
+				url: '/account',
+				templateUrl: 'app/account.html'
 			});
 	}
 })();
