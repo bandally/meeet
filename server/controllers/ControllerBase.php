@@ -5,11 +5,11 @@ use Phalcon\Http\Response;
 
 class ControllerBase extends Controller
 {
-    protected function _response($data)
+    protected function _response($data, $status = 200, $statusMessage = 'OK')
     {
         $response = new Response();
+        $response->setStatusCode($status, $statusMessage)->sendHeaders();
         $response->setJsonContent($data);
-
         return $response;
     }
 

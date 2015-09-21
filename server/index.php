@@ -62,8 +62,9 @@ $app->mount($spots);
 
 // 404エラー
 $app->notFound(function () use ($app) {
-    $app->response->setStatusCode(404, "Not Found")->sendHeaders();
-    echo '404 File not Found';
+    return $app->response
+        ->setStatusCode(404, 'Not Found')->sendHeaders()
+        ->setJsonContent(['error' => '404 File not Found']);
 });
 
 $app->handle();
