@@ -1,9 +1,6 @@
 <?php
 
-use Phalcon\Mvc\Controller;
-use Phalcon\Http\Response;
-
-class SpotsController extends Controller
+class SpotsController extends ControllerBase
 {
     public function index()
     {
@@ -20,10 +17,7 @@ class SpotsController extends Controller
             $data[] = $this->_getDataArray($spot);
         }
 
-        $response = new Response();
-        $response->setJsonContent($data);
-
-        return $response;
+        return $this->_response($data);
     }
 
     public function view($id)
@@ -32,10 +26,7 @@ class SpotsController extends Controller
 
         $data = $this->_getDataArray($spot);
 
-        $response = new Response();
-        $response->setJsonContent($data);
-
-        return $response;
+        return $this->_response($data);
     }
 
     public function add()
@@ -51,14 +42,5 @@ class SpotsController extends Controller
     public function delete($id)
     {
 
-    }
-
-    protected function _getDataArray($dataObject)
-    {
-        $data = [];
-        foreach ($dataObject as $column => $value) {
-            $data[$column] = $value;
-        }
-        return $data;
     }
 }
