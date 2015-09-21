@@ -49,6 +49,17 @@ $users->put('/{id}', 'edit');
 $users->delete('/{id}', 'delete');
 $app->mount($users);
 
+// Spots API
+$spots = new MicroCollection();
+$spots->setHandler('SpotsController', true);
+$spots->setPrefix('/spots');
+$spots->get('/', 'index');
+$spots->get('/{id}', 'view');
+$spots->post('/', 'add');
+$spots->put('/{id}', 'edit');
+$spots->delete('/{id}', 'delete');
+$app->mount($spots);
+
 // 404エラー
 $app->notFound(function () use ($app) {
     $app->response->setStatusCode(404, "Not Found")->sendHeaders();
