@@ -3,6 +3,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
+header("Access-Control-Allow-Origin: *");
+
 function debug($value) {
     echo '<pre>';
     print_r($value);

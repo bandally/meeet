@@ -25,14 +25,18 @@
 	</header>
 	<div ui-view></div>
 	<meeet-tab-menu class="tab-menu" ng-if="app.stateName() !== 'login'"></meeet-tab-menu>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-touch.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 	<script src="app/app.module.js"></script>
 	<script src="app/app.route.js"></script>
 	<script src="app/app.run.js"></script>
 	<script src="app/app.controller.js"></script>
 	<script src="app/login.controller.js"></script>
+	<script src="app/services/user.service.js"></script>
+	<script src="app/services/api.service.js"></script>
 	<script src="app/layout/tab-menu.directive.js"></script>
 </body>
 </html>

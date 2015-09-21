@@ -5,13 +5,22 @@
 
 	AppController.$injector = [
 		'$interval',
-		'$state'
+		'$state',
+		'user'
 	];
 
-	function AppController($interval, $state) {
+	function AppController($interval, $state, user) {
 
 		var vm = this;
 		vm.stateName = stateName;
+
+		activate();
+
+		function activate() {
+			user.getAll().then(function(user) {
+				console.log(user);
+			});
+		}
 
 		function stateName() {
 			return $state.current.name;
